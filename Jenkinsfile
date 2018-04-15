@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Maven Clean') {
             steps {
-                sh 'mvn clean'
+                sh 'mvnw clean'
             }
         }
         stage('Package') {
             steps {
-                sh 'mvn package'
+                sh 'mvnw package'
             }
         }
     }
